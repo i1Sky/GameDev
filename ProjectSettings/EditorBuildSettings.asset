@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Dungeon.unity
     guid: 996a8a2fb554d3c48bf90e81ad8a7701
+  - enabled: 1
+    path: Assets/Main_Menu.unity
+    guid: 953a24b1a946a664c9a348f1b1801aa8
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

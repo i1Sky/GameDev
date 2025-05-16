@@ -655,7 +655,7 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
-    Standalone: ABC_GC_2_Integration
+    Standalone: ABC_GC_2_Integration;ABC_GC_2_Stats_Integration
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
