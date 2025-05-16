@@ -3,46 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   tags: []
-=======
-=======
->>>>>>> Stashed changes
-  tags:
-  - ABC/RightWeaponHolster
-  - ABC/RightWeaponSheath
-  - ABC/BackLeftWeaponSheath
-  - ABC/LeftHand
-  - ABC/BackCentreWeaponSheath
-  - ABC/BackRightWeaponSheath
-  - ABC/RightFoot
-  - ABC/BackRightDiagonalWeaponSheath
-  - ABC/LeftWeaponSheath
-  - ABC/RightHand
-  - ABC/BackLeftDiagonalWeaponSheath
-  - ABC/LeftFoot
-  - ABC/LeftWeaponHolder
-  - ABC/LeftWeaponHolster
-  - ABC/RightWeaponHolder
-  - ABC/Head
-  - ABC/WeaponInitiation
-  - ABC/WeaponIK
-  - ABC/AdditionalWeaponInitiation
-  - Debris
-  - Enemy
-  - GunInitiation
-  - ThrowInitiation
-  - KnifeInitiation
-  - Friendly
-  - Environment
-  - ABC/WeaponBase
-  - ABC/WeaponTip
-  - ABC/AdditionalWeaponIK
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -82,16 +43,3 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
-<<<<<<< Updated upstream
-=======
-  - Light Layer 1
-  - Light Layer 2
-  - Light Layer 3
-  - Light Layer 4
-  - Light Layer 5
-  - Light Layer 6
-  - Light Layer 7
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes

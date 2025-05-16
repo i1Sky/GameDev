@@ -5960,6 +5960,7 @@ GameObject:
   - component: {fileID: 4240879327061763705}
   - component: {fileID: 3203577879149926375}
   - component: {fileID: 8554742631068392985}
+  - component: {fileID: -6235859450821807905}
   m_Layer: 0
   m_Name: Knight Commander
   m_TagString: Enemy
@@ -16532,6 +16533,76 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-6235859450821807905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7280881603691802785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 3986234693312053565
+    - rid: 3986234693312053707
+  m_TriggerEvent:
+    rid: 3986234693312053588
+  references:
+    version: 2
+    RefIds:
+    - rid: 3986234693312053565
+      type: {class: InstructionQuestTaskValue, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Journal:
+          m_Property:
+            rid: 3986234693312053566
+        m_Task:
+          m_Quest: {fileID: 11400000, guid: 241f5aad294cc2f488c5974c33c06d0d, type: 2}
+          m_TaskId: -2126675476
+        m_Value:
+          m_Operation: 1
+          m_Value:
+            m_Property:
+              rid: 3986234693312053567
+    - rid: 3986234693312053566
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234693312053567
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 3986234693312053588
+      type: {class: EventOnDisable, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234693312053707
+      type: {class: InstructionQuestTaskValue, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Journal:
+          m_Property:
+            rid: 3986234693312053708
+        m_Task:
+          m_Quest: {fileID: 11400000, guid: 952134c5c3f633946a30e0c2709d368d, type: 2}
+          m_TaskId: 172585009
+        m_Value:
+          m_Operation: 1
+          m_Value:
+            m_Property:
+              rid: 3986234693312053709
+    - rid: 3986234693312053708
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234693312053709
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
 --- !u!1 &7326242341595866256
 GameObject:
   m_ObjectHideFlags: 0

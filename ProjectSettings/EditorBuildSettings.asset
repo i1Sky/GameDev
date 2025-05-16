@@ -4,21 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< Updated upstream
-  m_Scenes: []
-  m_configObjects: {}
-=======
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
     path: Assets/FantasyMap.unity
-    guid: 8174ef62f213d18458a0af7e21c02dfb
+    guid: 9e0bbd0138ae2d342b935c447553230d
   - enabled: 1
     path: Assets/Dungeon.unity
-    guid: 684cb68ee650a864d9d5060dc397dbab
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
->>>>>>> Stashed changes
+    guid: 996a8a2fb554d3c48bf90e81ad8a7701
+  m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

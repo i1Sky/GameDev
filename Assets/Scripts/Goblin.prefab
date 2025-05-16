@@ -1468,6 +1468,7 @@ GameObject:
   - component: {fileID: 6794374468728090942}
   - component: {fileID: 5732115226183920458}
   - component: {fileID: -6763606107804280053}
+  - component: {fileID: -928933906311665241}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Enemy
@@ -11584,15 +11585,12 @@ MonoBehaviour:
   m_Instructions:
     m_Instructions:
     - rid: 3986234682752631207
+    - rid: 3986234693312053686
   m_TriggerEvent:
-    rid: 3986234682752631205
+    rid: 3986234693312053497
   references:
     version: 2
     RefIds:
-    - rid: 3986234682752631205
-      type: {class: EventOnDelete, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
-      data:
-        m_When: 1
     - rid: 3986234682752631207
       type: {class: InstructionQuestTaskValue, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
       data:
@@ -11600,7 +11598,7 @@ MonoBehaviour:
         m_IsEnabled: 1
         m_Journal:
           m_Property:
-            rid: 3986234685612097627
+            rid: 3986234693312053477
         m_Task:
           m_Quest: {fileID: 11400000, guid: f1cf8a5fbc0467049b2bd10704308b72, type: 2}
           m_TaskId: 248716379
@@ -11613,10 +11611,81 @@ MonoBehaviour:
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 1
-    - rid: 3986234685612097627
-      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 3986234693312053477
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234693312053497
+      type: {class: EventOnDisable, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234693312053686
+      type: {class: InstructionQuestTaskValue, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
       data:
-        m_GameObject: {fileID: 6839530182610417934, guid: 236d6c26a6bfae24ab77c9ee2329186a, type: 3}
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Journal:
+          m_Property:
+            rid: 3986234693312053687
+        m_Task:
+          m_Quest: {fileID: 11400000, guid: 952134c5c3f633946a30e0c2709d368d, type: 2}
+          m_TaskId: -99836965
+        m_Value:
+          m_Operation: 1
+          m_Value:
+            m_Property:
+              rid: 3986234693312053688
+    - rid: 3986234693312053687
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234693312053688
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+--- !u!114 &-928933906311665241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2381388016646480545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 3986234693312053565
+  m_TriggerEvent:
+    rid: 3986234693312053588
+  references:
+    version: 2
+    RefIds:
+    - rid: 3986234693312053565
+      type: {class: InstructionQuestTaskValue, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Journal:
+          m_Property:
+            rid: 3986234693312053566
+        m_Task:
+          m_Quest: {fileID: 11400000, guid: c40bf85c176508a46b73711d4c76e7a4, type: 2}
+          m_TaskId: 959457546
+        m_Value:
+          m_Operation: 1
+          m_Value:
+            m_Property:
+              rid: 3986234693312053567
+    - rid: 3986234693312053566
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234693312053567
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 3986234693312053588
+      type: {class: EventOnDisable, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 
 --- !u!1 &2491537912559127368
 GameObject:
   m_ObjectHideFlags: 0
