@@ -13,34 +13,34 @@ MonoBehaviour:
   m_Name: core.general
   m_EditorClassIdentifier: 
   m_Repository:
-    rid: 3986234676575994064
+    rid: 7672885993339879488
   references:
     version: 2
     RefIds:
-    - rid: 3986234676575994064
+    - rid: 7672885993339879488
       type: {class: GeneralRepository, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Save:
           m_Encryption:
-            rid: 3986234676575994065
+            rid: 7672885993339879489
           m_Storage:
-            rid: 3986234676575994066
+            rid: 7672885993339879490
           m_Load: 0
           m_Scene:
             m_Property:
-              rid: 3986234676575994067
+              rid: 7672885993339879491
         m_Audio:
           soundEffectsMixer: {fileID: 0}
           ambientMixer: {fileID: 0}
           musicMixer: {fileID: 0}
           speechMixer: {fileID: 0}
           userInterfaceMixer: {fileID: 0}
-    - rid: 3986234676575994065
+    - rid: 7672885993339879489
       type: {class: EncryptionNone, ns: GameCreator.Runtime.Common.SaveSystem, asm: GameCreator.Runtime.Core}
       data: 
-    - rid: 3986234676575994066
+    - rid: 7672885993339879490
       type: {class: StoragePlayerPrefs, ns: GameCreator.Runtime.Common.SaveSystem, asm: GameCreator.Runtime.Core}
       data: 
-    - rid: 3986234676575994067
+    - rid: 7672885993339879491
       type: {class: GetSceneActive, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
