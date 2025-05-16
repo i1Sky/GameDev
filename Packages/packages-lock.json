@@ -121,6 +121,7 @@
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.5",
       "depth": 1,
+<<<<<<< Updated upstream
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -128,6 +129,8 @@
     "com.unity.performance.profile-analyzer": {
       "version": "1.2.3",
       "depth": 1,
+=======
+>>>>>>> Stashed changes
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

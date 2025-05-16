@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EnablePreReleasePackages: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_EnablePackageDependencies: 0
   m_AdvancedSettingsExpanded: 1
   m_ScopedRegistriesSettingsExpanded: 1
   m_SeeAllPackageVersions: 0
+=======
+  m_AdvancedSettingsExpanded: 1
+  m_ScopedRegistriesSettingsExpanded: 1
+  m_SeeAllPackageVersions: 0
+  m_DismissPreviewPackagesInUse: 0
+>>>>>>> Stashed changes
 =======
   m_AdvancedSettingsExpanded: 1
   m_ScopedRegistriesSettingsExpanded: 1
@@ -40,8 +47,13 @@ MonoBehaviour:
     m_Modified: 0
     m_ErrorMessage: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_UserModificationsInstanceId: -830
     m_OriginalInstanceId: -832
+=======
+    m_UserModificationsInstanceId: -870
+    m_OriginalInstanceId: -872
+>>>>>>> Stashed changes
 =======
     m_UserModificationsInstanceId: -870
     m_OriginalInstanceId: -872
