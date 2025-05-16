@@ -4,8 +4,11 @@
 TagManager:
   serializedVersion: 3
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   tags: []
 =======
+=======
+>>>>>>> Stashed changes
   tags:
   - ABC/RightWeaponHolster
   - ABC/RightWeaponSheath
@@ -36,6 +39,9 @@ TagManager:
   - ABC/WeaponBase
   - ABC/WeaponTip
   - ABC/AdditionalWeaponIK
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   layers:
   - Default
@@ -85,4 +91,7 @@ TagManager:
   - Light Layer 5
   - Light Layer 6
   - Light Layer 7
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
