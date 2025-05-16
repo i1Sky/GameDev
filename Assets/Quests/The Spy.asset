@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c372b025c8c4d92bf11f951ee3d5042, type: 3}
+  m_Name: The Spy
+  m_EditorClassIdentifier: 
+  m_Title:
+    m_Property:
+      rid: 3986234685612097649
+  m_Description:
+    m_Property:
+      rid: 3986234685612097650
+  m_Color:
+    m_Property:
+      rid: 3986234685612097737
+  m_Sprite:
+    m_Property:
+      rid: 3986234685612097652
+  m_Type: 0
+  m_SortOrder: 0
+  m_UniqueId:
+    m_SerializedID:
+      m_String: caf78461-ef95-47c5-bf6a-7d89912e2ee0
+  m_Tasks:
+    rid: 3986234685612097653
+  m_OnActivate:
+    m_Instructions:
+      m_Instructions: []
+  m_OnDeactivate:
+    m_Instructions:
+      m_Instructions: []
+  m_OnComplete:
+    m_Instructions:
+      m_Instructions: []
+  m_OnAbandon:
+    m_Instructions:
+      m_Instructions: []
+  m_OnFail:
+    m_Instructions:
+      m_Instructions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3986234685612097649
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: The Spy?
+    - rid: 3986234685612097650
+      type: {class: GetStringEmpty, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097652
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097653
+      type: {class: TasksTree, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Dirty: 873
+        m_Data:
+          m_Keys: e20bac15ec813d81
+          m_Values:
+          - m_Id: 363596770
+            m_Value:
+              rid: 3986234685612097738
+          - m_Id: -2126675476
+            m_Value:
+              rid: 3986234685612097746
+        m_Nodes:
+          m_Keys: e20bac15ec813d81
+          m_Values:
+          - m_Id: 363596770
+            m_Parent: -1
+            m_Children: ec813d81
+          - m_Id: -2126675476
+            m_Parent: 363596770
+            m_Children: 
+        m_Roots: e20bac15
+    - rid: 3986234685612097737
+      type: {class: GetColorValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: {r: 0, g: 0.947247, b: 1, a: 1}
+    - rid: 3986234685612097738
+      type: {class: Task, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Completion: 0
+        m_IsHidden: 0
+        m_Name:
+          m_Property:
+            rid: 3986234685612097739
+        m_Description:
+          m_Property:
+            rid: 3986234685612097740
+        m_Color:
+          m_Property:
+            rid: 3986234685612097741
+        m_Sprite:
+          m_Property:
+            rid: 3986234685612097742
+        m_UseCounter: 0
+        m_CountTo:
+          m_Property:
+            rid: 3986234685612097743
+        m_ValueFrom:
+          m_Property:
+            rid: 3986234685612097744
+        m_CheckWhen:
+          m_Event:
+            rid: 3986234685612097745
+        m_OnActivate:
+          m_Instructions:
+            m_Instructions: []
+        m_OnDeactivate:
+          m_Instructions:
+            m_Instructions: []
+        m_OnComplete:
+          m_Instructions:
+            m_Instructions: []
+        m_OnAbandon:
+          m_Instructions:
+            m_Instructions: []
+        m_OnFail:
+          m_Instructions:
+            m_Instructions: []
+    - rid: 3986234685612097739
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Talk to the Angry noble
+    - rid: 3986234685612097740
+      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Text:
+          m_Text: Fat tom Worned me about that guy in red... i better invistigate
+    - rid: 3986234685612097741
+      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097742
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097743
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 3
+    - rid: 3986234685612097744
+      type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 0}
+          m_Name:
+            m_String: 
+            m_ID: 0
+    - rid: 3986234685612097745
+      type: {class: EventOnLateUpdate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097746
+      type: {class: Task, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Completion: 0
+        m_IsHidden: 0
+        m_Name:
+          m_Property:
+            rid: 3986234685612097747
+        m_Description:
+          m_Property:
+            rid: 3986234685612097748
+        m_Color:
+          m_Property:
+            rid: 3986234685612097749
+        m_Sprite:
+          m_Property:
+            rid: 3986234685612097750
+        m_UseCounter: 1
+        m_CountTo:
+          m_Property:
+            rid: 3986234685612097751
+        m_ValueFrom:
+          m_Property:
+            rid: 3986234685612097752
+        m_CheckWhen:
+          m_Event:
+            rid: 3986234685612097753
+        m_OnActivate:
+          m_Instructions:
+            m_Instructions: []
+        m_OnDeactivate:
+          m_Instructions:
+            m_Instructions: []
+        m_OnComplete:
+          m_Instructions:
+            m_Instructions: []
+        m_OnAbandon:
+          m_Instructions:
+            m_Instructions: []
+        m_OnFail:
+          m_Instructions:
+            m_Instructions: []
+    - rid: 3986234685612097747
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: The Commander
+    - rid: 3986234685612097748
+      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Text:
+          m_Text: it apprears that the noble was in our side.. let see one strong
+            is that commnader...
+    - rid: 3986234685612097749
+      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097750
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097751
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 3986234685612097752
+      type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 0}
+          m_Name:
+            m_String: 
+            m_ID: 0
+    - rid: 3986234685612097753
+      type: {class: EventOnLateUpdate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 

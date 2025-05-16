@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c372b025c8c4d92bf11f951ee3d5042, type: 3}
+  m_Name: Goblen
+  m_EditorClassIdentifier: 
+  m_Title:
+    m_Property:
+      rid: 3986234676575994071
+  m_Description:
+    m_Property:
+      rid: 3986234679858823492
+  m_Color:
+    m_Property:
+      rid: 3986234679858823494
+  m_Sprite:
+    m_Property:
+      rid: 3986234676575994074
+  m_Type: 0
+  m_SortOrder: 10
+  m_UniqueId:
+    m_SerializedID:
+      m_String: dff01b0b-47c3-4023-9a78-fb945d6f590c
+  m_Tasks:
+    rid: 3986234676575994075
+  m_OnActivate:
+    m_Instructions:
+      m_Instructions: []
+  m_OnDeactivate:
+    m_Instructions:
+      m_Instructions: []
+  m_OnComplete:
+    m_Instructions:
+      m_Instructions: []
+  m_OnAbandon:
+    m_Instructions:
+      m_Instructions: []
+  m_OnFail:
+    m_Instructions:
+      m_Instructions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3986234676575994071
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Do your wormups on the goblins
+    - rid: 3986234676575994074
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234676575994075
+      type: {class: TasksTree, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Dirty: 89482
+        m_Data:
+          m_Keys: 5b1cd30e
+          m_Values:
+          - m_Id: 248716379
+            m_Value:
+              rid: 3986234679858823495
+        m_Nodes:
+          m_Keys: 5b1cd30e
+          m_Values:
+          - m_Id: 248716379
+            m_Parent: -1
+            m_Children: 
+        m_Roots: 5b1cd30e
+    - rid: 3986234679858823492
+      type: {class: GetStringQuestDescription, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Quest:
+          m_Property:
+            rid: 3986234679858823493
+    - rid: 3986234679858823493
+      type: {class: GetQuestInstance, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Quest: {fileID: 0}
+    - rid: 3986234679858823494
+      type: {class: GetColorValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: {r: 0.9556836, g: 1, b: 0, a: 1}
+    - rid: 3986234679858823495
+      type: {class: Task, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Completion: 0
+        m_IsHidden: 0
+        m_Name:
+          m_Property:
+            rid: 3986234679858823496
+        m_Description:
+          m_Property:
+            rid: 3986234679858823497
+        m_Color:
+          m_Property:
+            rid: 3986234679858823503
+        m_Sprite:
+          m_Property:
+            rid: 3986234679858823499
+        m_UseCounter: 1
+        m_CountTo:
+          m_Property:
+            rid: 3986234679858823500
+        m_ValueFrom:
+          m_Property:
+            rid: 3986234679858823501
+        m_CheckWhen:
+          m_Event:
+            rid: 3986234682752631199
+        m_OnActivate:
+          m_Instructions:
+            m_Instructions: []
+        m_OnDeactivate:
+          m_Instructions:
+            m_Instructions: []
+        m_OnComplete:
+          m_Instructions:
+            m_Instructions: []
+        m_OnAbandon:
+          m_Instructions:
+            m_Instructions: []
+        m_OnFail:
+          m_Instructions:
+            m_Instructions: []
+    - rid: 3986234679858823496
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Kill 5 Goblins
+    - rid: 3986234679858823497
+      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Text:
+          m_Text: Uncle Max Told me that there are few goblins in the swamps
+    - rid: 3986234679858823499
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234679858823500
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 5
+    - rid: 3986234679858823501
+      type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 0}
+          m_Name:
+            m_String: 
+            m_ID: 0
+    - rid: 3986234679858823503
+      type: {class: GetColorValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: {r: 1, g: 0.97164285, b: 0, a: 1}
+    - rid: 3986234682752631199
+      type: {class: EventOnDisable, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 

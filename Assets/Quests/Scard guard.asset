@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c372b025c8c4d92bf11f951ee3d5042, type: 3}
+  m_Name: Scard guard
+  m_EditorClassIdentifier: 
+  m_Title:
+    m_Property:
+      rid: 3986234685612097649
+  m_Description:
+    m_Property:
+      rid: 3986234685612097650
+  m_Color:
+    m_Property:
+      rid: 3986234685612097723
+  m_Sprite:
+    m_Property:
+      rid: 3986234685612097652
+  m_Type: 0
+  m_SortOrder: 0
+  m_UniqueId:
+    m_SerializedID:
+      m_String: c198ce6d-2802-4b95-84dc-14ef49822c77
+  m_Tasks:
+    rid: 3986234685612097653
+  m_OnActivate:
+    m_Instructions:
+      m_Instructions: []
+  m_OnDeactivate:
+    m_Instructions:
+      m_Instructions: []
+  m_OnComplete:
+    m_Instructions:
+      m_Instructions: []
+  m_OnAbandon:
+    m_Instructions:
+      m_Instructions: []
+  m_OnFail:
+    m_Instructions:
+      m_Instructions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3986234685612097649
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Defeat the Enamy
+    - rid: 3986234685612097650
+      type: {class: GetStringEmpty, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097652
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097653
+      type: {class: TasksTree, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Dirty: 71441
+        m_Data:
+          m_Keys: 9ecff0a2
+          m_Values:
+          - m_Id: -1561276514
+            m_Value:
+              rid: 3986234685612097724
+        m_Nodes:
+          m_Keys: 9ecff0a2
+          m_Values:
+          - m_Id: -1561276514
+            m_Parent: -1
+            m_Children: 
+        m_Roots: 9ecff0a2
+    - rid: 3986234685612097723
+      type: {class: GetColorValue, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: {r: 1, g: 0.9751524, b: 0.0141509175, a: 1}
+    - rid: 3986234685612097724
+      type: {class: Task, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Completion: 0
+        m_IsHidden: 0
+        m_Name:
+          m_Property:
+            rid: 3986234685612097725
+        m_Description:
+          m_Property:
+            rid: 3986234685612097726
+        m_Color:
+          m_Property:
+            rid: 3986234685612097727
+        m_Sprite:
+          m_Property:
+            rid: 3986234685612097728
+        m_UseCounter: 1
+        m_CountTo:
+          m_Property:
+            rid: 3986234685612097729
+        m_ValueFrom:
+          m_Property:
+            rid: 3986234685612097730
+        m_CheckWhen:
+          m_Event:
+            rid: 3986234685612097731
+        m_OnActivate:
+          m_Instructions:
+            m_Instructions: []
+        m_OnDeactivate:
+          m_Instructions:
+            m_Instructions: []
+        m_OnComplete:
+          m_Instructions:
+            m_Instructions: []
+        m_OnAbandon:
+          m_Instructions:
+            m_Instructions: []
+        m_OnFail:
+          m_Instructions:
+            m_Instructions: []
+    - rid: 3986234685612097725
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: defeat 7 Knights
+    - rid: 3986234685612097726
+      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Text:
+          m_Text: the Enamy Camp is just right ahead its better if you take then
+            off guard
+    - rid: 3986234685612097727
+      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097728
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 3986234685612097729
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 7
+    - rid: 3986234685612097730
+      type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 0}
+          m_Name:
+            m_String: 
+            m_ID: 0
+    - rid: 3986234685612097731
+      type: {class: EventOnLateUpdate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data: 
