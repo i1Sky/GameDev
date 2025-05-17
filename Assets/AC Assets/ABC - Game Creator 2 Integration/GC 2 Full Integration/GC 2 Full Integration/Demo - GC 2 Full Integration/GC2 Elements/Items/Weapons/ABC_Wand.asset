@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Color:
       m_Property:
         rid: 5753727335309246478
+    m_OnCreate:
+      m_Instructions:
+        m_Instructions: []
+    m_ExecuteFromParent: 0
   m_Shape:
     m_Width: 1
     m_Height: 1
@@ -54,14 +58,13 @@ MonoBehaviour:
       - m_String: defense
       m_Values:
       - m_Override: 1
-        m_Number: 45
+        m_Number: 50
       - m_Override: 0
         m_Number: 0
   m_Sockets:
     m_InheritFromParent: 1
     m_List:
-    - m_IsExpanded: 1
-      m_Breakpoint: 0
+    - m_Breakpoint: 0
       m_IsEnabled: 0
       m_Base: {fileID: 11400000, guid: 722686d0d83334c769b8bb4e775a8036, type: 2}
       m_SocketID:
@@ -138,7 +141,6 @@ MonoBehaviour:
     - rid: 5753727335309246479
       type: {class: InstructionABCToggleWeapon, ns: GameCreator.Core, asm: Assembly-CSharp}
       data:
-        m_IsExpanded: 1
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Target:
@@ -149,7 +151,6 @@ MonoBehaviour:
     - rid: 5753727335309246481
       type: {class: InstructionABCToggleWeapon, ns: GameCreator.Core, asm: Assembly-CSharp}
       data:
-        m_IsExpanded: 1
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Target:
@@ -160,13 +161,14 @@ MonoBehaviour:
     - rid: 5753727335309246627
       type: {class: InstructionStatsAddModifier, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
       data:
-        m_IsExpanded: 1
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Target:
           m_Property:
             rid: 9034727894779428920
-        m_Stat: {fileID: 11400000, guid: 216a954c190334ea6869265ab6d51580, type: 2}
+        m_Stat:
+          m_Property:
+            rid: 7672886217717317671
         m_Type: 0
         m_Value:
           m_Property:
@@ -178,13 +180,14 @@ MonoBehaviour:
     - rid: 5753727335309246632
       type: {class: InstructionStatsRemoveModifier, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
       data:
-        m_IsExpanded: 1
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Target:
           m_Property:
             rid: 9034727894779428922
-        m_Stat: {fileID: 11400000, guid: 216a954c190334ea6869265ab6d51580, type: 2}
+        m_Stat:
+          m_Property:
+            rid: 7672886217717317672
         m_Type: 0
         m_Value:
           m_Property:
@@ -196,7 +199,6 @@ MonoBehaviour:
     - rid: 5753727401721069654
       type: {class: InstructionABCToggleWeapon, ns: GameCreator.Core, asm: Assembly-CSharp}
       data:
-        m_IsExpanded: 1
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Target:
@@ -207,7 +209,6 @@ MonoBehaviour:
     - rid: 5753727401721069656
       type: {class: InstructionCommonTimeWait, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
-        m_IsExpanded: 1
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Seconds:
@@ -223,13 +224,26 @@ MonoBehaviour:
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 0
+    - rid: 7672886217717317671
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: 216a954c190334ea6869265ab6d51580, type: 2}
+    - rid: 7672886217717317672
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: 216a954c190334ea6869265ab6d51580, type: 2}
     - rid: 9034727894779428918
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 9034727894779428919
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 9034727894779428920
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 9034727894779428921
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
     - rid: 9034727894779428922
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 

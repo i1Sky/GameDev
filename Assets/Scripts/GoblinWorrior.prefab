@@ -4245,6 +4245,7 @@ GameObject:
   - component: {fileID: 206998574529755374}
   - component: {fileID: 7385682073253991307}
   - component: {fileID: 3427400568246810123}
+  - component: {fileID: -6967104249628539037}
   m_Layer: 0
   m_Name: GoblinWorrior
   m_TagString: Enemy
@@ -4334,7 +4335,7 @@ MonoBehaviour:
   Abilities:
   - globalAbilities: {fileID: 11400000, guid: 2f681995c0fd1e74da423d57647ffb5d, type: 2}
     globalElementSource: {fileID: 0}
-    globalAbilitiesEnableGameTypeModification: 0
+    globalAbilitiesEnableGameTypeModification: 1
     globalAbilitiesGameTypeModification: 0
     name: 
     abilityID: -1
@@ -13802,8 +13803,8 @@ MonoBehaviour:
   hitsInterruptCasting: 1
   maxMana: 1000
   manaABC: 1000
-  manaIntergrationType: 0
-  gcManaID: mana
+  manaIntergrationType: 3
+  gcManaID: mp
   manaRegenPerSecond: 1
   fullManaOnEnable: 1
   nextWeapon: 1
@@ -13993,12 +13994,12 @@ MonoBehaviour:
   softTargetConfirmKey: 325
   softTargetSetRaiseEvent: 0
   preparingAbilityGUIBar:
-    refVal: {fileID: 3606296993237403941}
-    refName: SliderPreparing
+    refVal: {fileID: 0}
+    refName: 
     refUpdateDateTime: 
   preparingAbilityGUIText:
-    refVal: {fileID: 3065268802089484226}
-    refName: PreparingText
+    refVal: {fileID: 0}
+    refName: 
     refUpdateDateTime: 
   abilityLogGUIText:
     refVal: {fileID: 0}
@@ -14073,7 +14074,7 @@ MonoBehaviour:
   - tagBefore: 'Friendly '
     tagAfter: Enemy
   toolbarStateManagerSelection: 0
-  toolbarStateManagerGeneralSettingsSelection: 0
+  toolbarStateManagerGeneralSettingsSelection: 2
   toolbarStateManagerEffectWatcherSettingsSelection: 0
   showHelpInformation: 1
   updateEditorAtRunTime: 0
@@ -14249,35 +14250,17 @@ MonoBehaviour:
   hitStopMovementDuration: 0.8
   hitStopMovementFreezePosition: 0
   hitStopMovementDisableComponents: 1
-  HealthGUIList:
-  - healthSlider:
-      refVal: {fileID: 2462918869441261133}
-      refName: SliderHealth
-      refUpdateDateTime: 
-    healthOverTimeSlider:
-      refVal: {fileID: 5170608225952071679}
-      refName: SliderHealthOverTime
-      refUpdateDateTime: 
-    healthOverTimeSliderUpdateDelay: 0.7
-    healthOverTimeSliderUpdateDuration: 0.5
-    sliderShowing: 0
-    onlyShowSliderWhenSelected: 0
-    healthText:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  showGUIImageOnHealthReduction: 0
+  HealthGUIList: []
+  showGUIImageOnHealthReduction: 1
   imageOnHealthReduction:
     refVal: {fileID: 0}
     refName: 
     refUpdateDateTime: 20/09/2020 19:07:07
   imageOnHealthReductionDuration: 0.3
-  maxHealth: 1000
-  healthABC: 1000
-  healthIntergrationType: 0
-  gcHealthID: health
+  maxHealth: 350
+  healthABC: 350
+  healthIntergrationType: 3
+  gcHealthID: hp
   healthRegenPerSecond: 0
   fullHealthOnEnable: 1
   swapModelOnZeroHealth: 0
@@ -14310,59 +14293,7 @@ MonoBehaviour:
   zeroHealthAnimationAnimatorOnValue: 
   zeroHealthAnimationAnimatorOffValue: 
   zeroHealthAnimationAnimatorDuration: 3
-  EntityStatList:
-  - foldOut: 0
-    statName: Strength
-    statValue: 200
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Defence
-    statValue: 30
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Magic
-    statValue: 100
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Dexterity
-    statValue: 100
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
+  EntityStatList: []
   blockDuplicateEffectActivation: 0
   canDamage: 1
   enablePooling: 1
@@ -14450,27 +14381,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Instructions:
     m_Instructions:
-    - rid: 7672886189779321285
+    - rid: 7672886220414517521
     - rid: 7672886189779321276
   m_TriggerEvent:
-    rid: 7672886189779321269
+    rid: 7672886217717318530
   references:
     version: 2
     RefIds:
-    - rid: 7672886189779321269
-      type: {class: EventStatsAttributeChange, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
-      data:
-        m_Target:
-          m_Property:
-            rid: 7672886189779321294
-        m_When: 2
-        m_Attribute:
-          m_Property:
-            rid: 7672886189779321271
-    - rid: 7672886189779321271
-      type: {class: GetAttributeInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
-      data:
-        m_Attribute: {fileID: 11400000, guid: 4cf7ae5caa4804d0ea2548dceac15ffb, type: 2}
     - rid: 7672886189779321276
       type: {class: InstructionStatsAddModifier, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
       data:
@@ -14496,16 +14413,34 @@ MonoBehaviour:
     - rid: 7672886189779321279
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 45
-    - rid: 7672886189779321285
+        m_Value: 50
+    - rid: 7672886217717318530
+      type: {class: EventStatsAttributeChange, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Target:
+          m_Property:
+            rid: 7672886220414517595
+        m_When: 2
+        m_Attribute:
+          m_Property:
+            rid: 7672886217717318532
+    - rid: 7672886217717318532
+      type: {class: GetAttributeInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Attribute: {fileID: 11400000, guid: 4cf7ae5caa4804d0ea2548dceac15ffb, type: 2}
+    - rid: 7672886220414517521
       type: {class: InstructionLogicCheckConditions, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
       data:
         m_Breakpoint: 0
         m_IsEnabled: 1
         m_Conditions:
           m_Conditions:
-          - rid: 7672886189779321286
-    - rid: 7672886189779321286
+          - rid: 7672886220414517603
+    - rid: 7672886220414517595
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 5719441144588947632}
+    - rid: 7672886220414517603
       type: {class: ConditionCompareAttribute, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
       data:
         m_Breakpoint: 0
@@ -14513,30 +14448,106 @@ MonoBehaviour:
         m_Sign: 1
         m_Traits:
           m_Property:
-            rid: 7672886189779321290
+            rid: 7672886220414517607
         m_Attribute:
           m_Property:
-            rid: 7672886189779321288
+            rid: 7672886220414517605
         m_Value: 0
         m_CompareTo:
           m_Comparison: 4
           m_CompareTo:
             m_Property:
-              rid: 7672886189779321289
-    - rid: 7672886189779321288
+              rid: 7672886220414517606
+    - rid: 7672886220414517605
       type: {class: GetAttributeInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
       data:
         m_Attribute: {fileID: 11400000, guid: 4cf7ae5caa4804d0ea2548dceac15ffb, type: 2}
-    - rid: 7672886189779321289
+    - rid: 7672886220414517606
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: 0
-    - rid: 7672886189779321290
+    - rid: 7672886220414517607
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
-    - rid: 7672886189779321294
-      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
-      data: 
+--- !u!114 &-6967104249628539037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719441144588947632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c924eacff884626a5aa4c90cf311c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Class: {fileID: 11400000, guid: bc16cea8e8486448b8e12b9829331f1d, type: 2}
+  m_OverrideAttributes:
+    m_Keys:
+    - m_String: hp
+    - m_String: mp
+    - m_String: stamina
+    m_Values:
+    - m_IsExpanded: 0
+      m_ChangeStartPercent:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeStartPercent:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeStartPercent:
+        m_IsEnabled: 0
+        m_Value: 1
+  m_OverrideStats:
+    m_Keys:
+    - m_String: xp
+    - m_String: level
+    - m_String: constitution
+    - m_String: will
+    - m_String: strength
+    - m_String: dexterity
+    - m_String: wisdom
+    - m_String: charisma
+    - m_String: luck
+    m_Values:
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 1
+      m_ChangeBase:
+        m_IsEnabled: 1
+        m_Value: 70
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
 --- !u!1 &5828667748719599823
 GameObject:
   m_ObjectHideFlags: 0

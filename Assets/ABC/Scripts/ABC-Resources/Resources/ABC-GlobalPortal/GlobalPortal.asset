@@ -26,7 +26,7 @@ MonoBehaviour:
   - {fileID: 8938170482598162167, guid: f7b18dabefe301345bd9bdebdce14aae, type: 3}
   - {fileID: 7855075609614284343, guid: 7520babdb00eafb429a3a9a7000b9484, type: 3}
   characterType: 1
-  characterIntegrationType: 0
+  characterIntegrationType: 1
   gameType: 0
   addComponentPresets: 1
   persistentCrosshairAestheticMode: 1
@@ -34,8 +34,8 @@ MonoBehaviour:
   convertAbilitiesToGameType: 1
   alwaysShowUI: 1
   clickType: 1
-  setupForWeaponsAndAbilities: 1
-  addUI: 1
+  setupForWeaponsAndAbilities: 0
+  addUI: 0
   enableAI: 1
   typeAI: 0
   addCamera: 1
@@ -57,4 +57,4 @@ MonoBehaviour:
   gunHolderAdjustmentObject: {fileID: 8122190884529286227, guid: 5d1afc23096026b49b55824ace716bf0, type: 3}
   displayABCTemplates: 1
   displayABCElements: 1
-  displayWelcomeOnStartUp: 1
+  displayWelcomeOnStartUp: 0

@@ -3,7 +3,32 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - ABC/BackLeftDiagonalWeaponSheath
+  - ABC/BackRightDiagonalWeaponSheath
+  - ABC/RightWeaponHolster
+  - ABC/RightWeaponSheath
+  - ABC/LeftWeaponSheath
+  - ABC/LeftWeaponHolder
+  - ABC/BackLeftWeaponSheath
+  - ABC/LeftWeaponHolster
+  - ABC/RightWeaponHolder
+  - ABC/BackCentreWeaponSheath
+  - ABC/BackRightWeaponSheath
+  - ABC/RightFoot
+  - ABC/LeftFoot
+  - ABC/Head
+  - ABC/LeftHand
+  - ABC/RightHand
+  - Friendly
+  - Enemy
+  - ABC/WeaponInitiation
+  - ABC/WeaponBase
+  - ABC/WeaponTip
+  - GunInitiation
+  - ABC/WeaponIK
+  - ABC/AdditionalWeaponInitiation
+  - ABC/AdditionalWeaponIK
   layers:
   - Default
   - TransparentFX
