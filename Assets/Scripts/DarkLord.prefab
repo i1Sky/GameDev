@@ -4445,7 +4445,7 @@ MonoBehaviour:
   Abilities:
   - globalAbilities: {fileID: 11400000, guid: 8fd4f9fcfb7a9da44bb3afb1145cdaae, type: 2}
     globalElementSource: {fileID: 0}
-    globalAbilitiesEnableGameTypeModification: 0
+    globalAbilitiesEnableGameTypeModification: 1
     globalAbilitiesGameTypeModification: 0
     name: 
     abilityID: -1
@@ -13958,8 +13958,8 @@ MonoBehaviour:
   hitsInterruptCasting: 1
   maxMana: 1000
   manaABC: 1000
-  manaIntergrationType: 0
-  gcManaID: mana
+  manaIntergrationType: 3
+  gcManaID: mp
   manaRegenPerSecond: 1
   fullManaOnEnable: 1
   nextWeapon: 1
@@ -14149,12 +14149,12 @@ MonoBehaviour:
   softTargetConfirmKey: 325
   softTargetSetRaiseEvent: 0
   preparingAbilityGUIBar:
-    refVal: {fileID: 7699191473695694277}
-    refName: SliderPreparing
+    refVal: {fileID: 0}
+    refName: 
     refUpdateDateTime: 
   preparingAbilityGUIText:
-    refVal: {fileID: 881579334405564940}
-    refName: PreparingText
+    refVal: {fileID: 0}
+    refName: 
     refUpdateDateTime: 
   abilityLogGUIText:
     refVal: {fileID: 0}
@@ -14229,7 +14229,7 @@ MonoBehaviour:
   - tagBefore: 'Friendly '
     tagAfter: Enemy
   toolbarStateManagerSelection: 0
-  toolbarStateManagerGeneralSettingsSelection: 0
+  toolbarStateManagerGeneralSettingsSelection: 2
   toolbarStateManagerEffectWatcherSettingsSelection: 0
   showHelpInformation: 1
   updateEditorAtRunTime: 0
@@ -14405,36 +14405,18 @@ MonoBehaviour:
   hitStopMovementDuration: 0.8
   hitStopMovementFreezePosition: 0
   hitStopMovementDisableComponents: 1
-  HealthGUIList:
-  - healthSlider:
-      refVal: {fileID: 3791836703321288101}
-      refName: SliderHealth
-      refUpdateDateTime: 
-    healthOverTimeSlider:
-      refVal: {fileID: 68690181833036499}
-      refName: SliderHealthOverTime
-      refUpdateDateTime: 
-    healthOverTimeSliderUpdateDelay: 0.7
-    healthOverTimeSliderUpdateDuration: 0.5
-    sliderShowing: 0
-    onlyShowSliderWhenSelected: 1
-    healthText:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  showGUIImageOnHealthReduction: 0
+  HealthGUIList: []
+  showGUIImageOnHealthReduction: 1
   imageOnHealthReduction:
     refVal: {fileID: 0}
     refName: 
     refUpdateDateTime: 20/09/2020 19:07:07
   imageOnHealthReductionDuration: 0.3
-  maxHealth: 2000
-  healthABC: 2000
-  healthIntergrationType: 0
-  gcHealthID: health
-  healthRegenPerSecond: 2
+  maxHealth: 350
+  healthABC: 350
+  healthIntergrationType: 3
+  gcHealthID: hp
+  healthRegenPerSecond: 0
   fullHealthOnEnable: 1
   swapModelOnZeroHealth: 0
   swapModelToDisable:
@@ -14466,59 +14448,7 @@ MonoBehaviour:
   zeroHealthAnimationAnimatorOnValue: 
   zeroHealthAnimationAnimatorOffValue: 
   zeroHealthAnimationAnimatorDuration: 3
-  EntityStatList:
-  - foldOut: 0
-    statName: Strength
-    statValue: 300
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Defence
-    statValue: 30
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Magic
-    statValue: 100
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Dexterity
-    statValue: 100
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
+  EntityStatList: []
   blockDuplicateEffectActivation: 0
   canDamage: 1
   enablePooling: 1
@@ -14771,8 +14701,8 @@ MonoBehaviour:
         m_Value: 1
     - m_IsExpanded: 0
       m_ChangeBase:
-        m_IsEnabled: 0
-        m_Value: 1
+        m_IsEnabled: 1
+        m_Value: 250
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0

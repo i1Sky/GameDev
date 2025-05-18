@@ -4213,6 +4213,7 @@ GameObject:
   - component: {fileID: 7742384148150415706}
   - component: {fileID: -434437348259585442}
   - component: {fileID: 5769347243508563116}
+  - component: {fileID: 676647885041656461}
   m_Layer: 0
   m_Name: HoboGoblin
   m_TagString: Enemy
@@ -14726,7 +14727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c924eacff884626a5aa4c90cf311c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Class: {fileID: 11400000, guid: bc16cea8e8486448b8e12b9829331f1d, type: 2}
+  m_Class: {fileID: 11400000, guid: 1b7dd33594d96ea4691c45a7f68282f5, type: 2}
   m_OverrideAttributes:
     m_Keys:
     - m_String: hp
@@ -14761,10 +14762,10 @@ MonoBehaviour:
       m_ChangeBase:
         m_IsEnabled: 0
         m_Value: 1
-    - m_IsExpanded: 0
+    - m_IsExpanded: 1
       m_ChangeBase:
-        m_IsEnabled: 0
-        m_Value: 1
+        m_IsEnabled: 1
+        m_Value: 4
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0
@@ -14893,6 +14894,69 @@ MonoBehaviour:
       data:
         m_Value: 0
     - rid: 7672886220414517607
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+--- !u!114 &676647885041656461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6023603952026692560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 7672886227062227064
+  m_TriggerEvent:
+    rid: 7672886220414517661
+  references:
+    version: 2
+    RefIds:
+    - rid: 7672886220414517661
+      type: {class: EventStatsStatChange, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Target:
+          m_Property:
+            rid: 7672886220414517662
+        m_When: 0
+        m_Stat:
+          m_Property:
+            rid: 7672886220414517663
+    - rid: 7672886220414517662
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 7672886220414517663
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: cbf0cb2229fd646dd8f831c2fc670538, type: 2}
+    - rid: 7672886227062227064
+      type: {class: InstructionStatsAddModifier, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Target:
+          m_Property:
+            rid: 7672886227062227068
+        m_Stat:
+          m_Property:
+            rid: 7672886227062227066
+        m_Type: 0
+        m_Value:
+          m_Property:
+            rid: 7672886227062227067
+    - rid: 7672886227062227066
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: d5e996d29fd8b4949be83fecaab6065b, type: 2}
+    - rid: 7672886227062227067
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 75
+    - rid: 7672886227062227068
       type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
 --- !u!1 &6067658778708699661

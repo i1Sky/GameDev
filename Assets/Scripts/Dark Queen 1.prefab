@@ -10206,8 +10206,8 @@ MonoBehaviour:
   toDestinationAnimatorParameterType: 0
   toDestinationAnimatorOnValue: 1
   toDestinationAnimatorOffValue: 0
-  minimumStopDistance: 5.5
-  maximumStopDistance: 5.5
+  minimumStopDistance: 10
+  maximumStopDistance: 15
   stopDistanceCheckVelocity: 0
   alwaysFaceDestination: 1
   faceDestinationTurnSpeed: 20
@@ -11045,7 +11045,7 @@ MonoBehaviour:
       m_ChangeBase:
         m_IsEnabled: 0
         m_Value: 1
-    - m_IsExpanded: 0
+    - m_IsExpanded: 1
       m_ChangeBase:
         m_IsEnabled: 1
         m_Value: 10
@@ -11065,10 +11065,10 @@ MonoBehaviour:
       m_ChangeBase:
         m_IsEnabled: 0
         m_Value: 1
-    - m_IsExpanded: 0
+    - m_IsExpanded: 1
       m_ChangeBase:
-        m_IsEnabled: 0
-        m_Value: 1
+        m_IsEnabled: 1
+        m_Value: 200
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0

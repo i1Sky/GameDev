@@ -124,12 +124,12 @@ MonoBehaviour:
     - rid: 5753727335309246474
       type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: ABC Wand
+        m_Value: Magic Wand
     - rid: 5753727335309246475
       type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Text:
-          m_Text: A sword used for ABC Integration
+          m_Text: A Magic Wand that casts magic.
     - rid: 5753727335309246476
       type: {class: GetSpriteInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
