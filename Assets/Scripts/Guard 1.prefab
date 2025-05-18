@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 640704148971084752}
   m_Layer: 0
   m_Name: Guard 1
-  m_TagString: Enemy
+  m_TagString: Friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,11 +163,13 @@ MonoBehaviour:
   enableTagConversions: 1
   tagConversions:
   - tagBefore: Ally
-    tagAfter: Enemy
-  - tagBefore: Target
     tagAfter: Friendly
+  - tagBefore: Target
+    tagAfter: Enemy
   - tagBefore: TargetPriority
-    tagAfter: FriendlyPriority
+    tagAfter: EnemyPriority
+  - tagBefore: Follow
+    tagAfter: Player
   Weapons: []
   _currentWeapons: []
   AbilityGroups: []
@@ -9119,7 +9121,7 @@ MonoBehaviour:
   ABCTag:
   - Ally
   TargeterLimitations:
-  - enableTargeterLimit: 0
+  - enableTargeterLimit: 1
     targeterTags:
     - Target
     maxNumberOfTargeters: 1
@@ -9295,8 +9297,8 @@ MonoBehaviour:
     refName: 
     refUpdateDateTime: 20/09/2020 19:07:07
   imageOnHealthReductionDuration: 0.3
-  maxHealth: 350
-  healthABC: 350
+  maxHealth: 500
+  healthABC: 500
   healthIntergrationType: 0
   gcHealthID: health
   healthRegenPerSecond: 0

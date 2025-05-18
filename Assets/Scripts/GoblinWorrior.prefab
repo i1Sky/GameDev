@@ -14528,7 +14528,7 @@ MonoBehaviour:
       m_ChangeBase:
         m_IsEnabled: 0
         m_Value: 1
-    - m_IsExpanded: 1
+    - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 1
         m_Value: 70

@@ -14150,8 +14150,8 @@ MonoBehaviour:
   hitsInterruptCasting: 1
   maxMana: 1000
   manaABC: 1000
-  manaIntergrationType: 0
-  gcManaID: mana
+  manaIntergrationType: 3
+  gcManaID: mp
   manaRegenPerSecond: 1
   fullManaOnEnable: 1
   nextWeapon: 1
@@ -14341,12 +14341,12 @@ MonoBehaviour:
   softTargetConfirmKey: 325
   softTargetSetRaiseEvent: 0
   preparingAbilityGUIBar:
-    refVal: {fileID: 144533106311873217}
-    refName: SliderPreparing
+    refVal: {fileID: 0}
+    refName: 
     refUpdateDateTime: 
   preparingAbilityGUIText:
-    refVal: {fileID: 7293069410352496384}
-    refName: PreparingText
+    refVal: {fileID: 0}
+    refName: 
     refUpdateDateTime: 
   abilityLogGUIText:
     refVal: {fileID: 0}
@@ -14597,26 +14597,8 @@ MonoBehaviour:
   hitStopMovementDuration: 0.8
   hitStopMovementFreezePosition: 0
   hitStopMovementDisableComponents: 1
-  HealthGUIList:
-  - healthSlider:
-      refVal: {fileID: 1541399780439428668}
-      refName: SliderHealth
-      refUpdateDateTime: 
-    healthOverTimeSlider:
-      refVal: {fileID: 2940838348756696665}
-      refName: SliderHealthOverTime
-      refUpdateDateTime: 
-    healthOverTimeSliderUpdateDelay: 0.7
-    healthOverTimeSliderUpdateDuration: 0.5
-    sliderShowing: 0
-    onlyShowSliderWhenSelected: 0
-    healthText:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  showGUIImageOnHealthReduction: 0
+  HealthGUIList: []
+  showGUIImageOnHealthReduction: 1
   imageOnHealthReduction:
     refVal: {fileID: 0}
     refName: 
@@ -14624,8 +14606,8 @@ MonoBehaviour:
   imageOnHealthReductionDuration: 0.3
   maxHealth: 350
   healthABC: 350
-  healthIntergrationType: 0
-  gcHealthID: health
+  healthIntergrationType: 3
+  gcHealthID: hp
   healthRegenPerSecond: 0
   fullHealthOnEnable: 1
   swapModelOnZeroHealth: 0
@@ -14658,59 +14640,7 @@ MonoBehaviour:
   zeroHealthAnimationAnimatorOnValue: 
   zeroHealthAnimationAnimatorOffValue: 
   zeroHealthAnimationAnimatorDuration: 3
-  EntityStatList:
-  - foldOut: 0
-    statName: Strength
-    statValue: 170
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Defence
-    statValue: 30
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Magic
-    statValue: 100
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Dexterity
-    statValue: 100
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
+  EntityStatList: []
   blockDuplicateEffectActivation: 0
   canDamage: 1
   enablePooling: 1
