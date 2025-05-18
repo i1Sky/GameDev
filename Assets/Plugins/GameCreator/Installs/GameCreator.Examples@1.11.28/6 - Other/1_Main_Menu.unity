@@ -2902,7 +2902,7 @@ MonoBehaviour:
         m_Scene:
           m_Scene: {fileID: 102900000, guid: 53f09f99adf256147bc0924b88c49b3e, type: 3}
           m_SceneName: New Scene
-          m_SceneIndex: -1
+          m_SceneIndex: 0
 --- !u!114 &837729190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3289,8 +3289,8 @@ MonoBehaviour:
       type: {class: GetSceneAsset, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Scene:
-          m_Scene: {fileID: 102900000, guid: 9e0bbd0138ae2d342b935c447553230d, type: 3}
-          m_SceneName: FantasyMap
+          m_Scene: {fileID: 102900000, guid: 53f09f99adf256147bc0924b88c49b3e, type: 3}
+          m_SceneName: New Scene
           m_SceneIndex: 0
 --- !u!114 &902944368
 MonoBehaviour:
@@ -6612,6 +6612,7 @@ MonoBehaviour:
     m_Instructions:
     - rid: 2531411738077954070
     - rid: 2531411738077954069
+    - rid: 7672886171634762045
   references:
     version: 2
     RefIds:
@@ -6645,6 +6646,25 @@ MonoBehaviour:
       type: {class: GetAudioClip, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
         m_Value: {fileID: 8300000, guid: ca2f865f146494b6a9f9f52b72519fae, type: 3}
+    - rid: 7672886171634762045
+      type: {class: InstructionCommonSceneLoad, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Scene:
+          m_Property:
+            rid: 7672886171634762046
+        m_Mode: 0
+        m_Async: 0
+        m_SceneEntries:
+          m_Entries: []
+    - rid: 7672886171634762046
+      type: {class: GetSceneAsset, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Scene:
+          m_Scene: {fileID: 102900000, guid: 53f09f99adf256147bc0924b88c49b3e, type: 3}
+          m_SceneName: New Scene
+          m_SceneIndex: 0
 --- !u!114 &1941026382
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -58,7 +58,7 @@ MonoBehaviour:
       - m_String: defense
       m_Values:
       - m_Override: 1
-        m_Number: 10
+        m_Number: 50
       - m_Override: 0
         m_Number: 0
   m_Sockets:
@@ -176,7 +176,7 @@ MonoBehaviour:
     - rid: 5753727335309246629
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 10
+        m_Value: 50
     - rid: 5753727335309246632
       type: {class: InstructionStatsRemoveModifier, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
       data:
@@ -195,7 +195,7 @@ MonoBehaviour:
     - rid: 5753727335309246634
       type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data:
-        m_Value: 10
+        m_Value: 50
     - rid: 5753727401721069654
       type: {class: InstructionABCToggleWeapon, ns: GameCreator.Core, asm: Assembly-CSharp}
       data:

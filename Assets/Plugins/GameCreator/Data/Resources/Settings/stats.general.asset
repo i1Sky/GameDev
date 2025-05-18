@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: stats.general
   m_EditorClassIdentifier: 
   m_Repository:
-    rid: 3986234685612097861
+    rid: 7672885993339879494
   references:
     version: 2
     RefIds:
-    - rid: 3986234685612097861
-      type: {class: StatsRepository, ns: GameCreator.Runtime.Stats, asm: Assembly-CSharp-firstpass}
+    - rid: 7672885993339879494
+      type: {class: StatsRepository, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
       data:
         m_StatusEffects:
-          m_List: []
+          m_List:
+          - {fileID: 11400000, guid: 7ea13b139298743b9925fbfc781d14ec, type: 2}
+          - {fileID: 11400000, guid: 05bc91ad2759b3b4bb0695171d205674, type: 2}
+          - {fileID: 11400000, guid: 7912c6c39b116f94cbd9d3f2af601bf3, type: 2}

@@ -4211,6 +4211,9 @@ GameObject:
   - component: {fileID: 4658376824956939227}
   - component: {fileID: 8023533344663823713}
   - component: {fileID: 7742384148150415706}
+  - component: {fileID: -434437348259585442}
+  - component: {fileID: 5769347243508563116}
+  - component: {fileID: 676647885041656461}
   m_Layer: 0
   m_Name: HoboGoblin
   m_TagString: Enemy
@@ -14148,8 +14151,8 @@ MonoBehaviour:
   hitsInterruptCasting: 1
   maxMana: 1000
   manaABC: 1000
-  manaIntergrationType: 0
-  gcManaID: mana
+  manaIntergrationType: 3
+  gcManaID: mp
   manaRegenPerSecond: 1
   fullManaOnEnable: 1
   nextWeapon: 1
@@ -14339,12 +14342,12 @@ MonoBehaviour:
   softTargetConfirmKey: 325
   softTargetSetRaiseEvent: 0
   preparingAbilityGUIBar:
-    refVal: {fileID: 144533106311873217}
-    refName: SliderPreparing
+    refVal: {fileID: 0}
+    refName: 
     refUpdateDateTime: 
   preparingAbilityGUIText:
-    refVal: {fileID: 7293069410352496384}
-    refName: PreparingText
+    refVal: {fileID: 0}
+    refName: 
     refUpdateDateTime: 
   abilityLogGUIText:
     refVal: {fileID: 0}
@@ -14595,26 +14598,8 @@ MonoBehaviour:
   hitStopMovementDuration: 0.8
   hitStopMovementFreezePosition: 0
   hitStopMovementDisableComponents: 1
-  HealthGUIList:
-  - healthSlider:
-      refVal: {fileID: 1541399780439428668}
-      refName: SliderHealth
-      refUpdateDateTime: 
-    healthOverTimeSlider:
-      refVal: {fileID: 2940838348756696665}
-      refName: SliderHealthOverTime
-      refUpdateDateTime: 
-    healthOverTimeSliderUpdateDelay: 0.7
-    healthOverTimeSliderUpdateDuration: 0.5
-    sliderShowing: 0
-    onlyShowSliderWhenSelected: 0
-    healthText:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  showGUIImageOnHealthReduction: 0
+  HealthGUIList: []
+  showGUIImageOnHealthReduction: 1
   imageOnHealthReduction:
     refVal: {fileID: 0}
     refName: 
@@ -14622,8 +14607,8 @@ MonoBehaviour:
   imageOnHealthReductionDuration: 0.3
   maxHealth: 350
   healthABC: 350
-  healthIntergrationType: 0
-  gcHealthID: health
+  healthIntergrationType: 3
+  gcHealthID: hp
   healthRegenPerSecond: 0
   fullHealthOnEnable: 1
   swapModelOnZeroHealth: 0
@@ -14656,59 +14641,7 @@ MonoBehaviour:
   zeroHealthAnimationAnimatorOnValue: 
   zeroHealthAnimationAnimatorOffValue: 
   zeroHealthAnimationAnimatorDuration: 3
-  EntityStatList:
-  - foldOut: 0
-    statName: Strength
-    statValue: 170
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Defence
-    statValue: 30
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Magic
-    statValue: 100
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
-  - foldOut: 0
-    statName: Dexterity
-    statValue: 100
-    textStatName:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textStatValue:
-      refVal: {fileID: 0}
-      refName: 
-      refUpdateDateTime: 
-    textShowing: 0
-    onlyShowTextWhenSelected: 0
+  EntityStatList: []
   blockDuplicateEffectActivation: 0
   canDamage: 1
   enablePooling: 1
@@ -14782,6 +14715,250 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-434437348259585442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6023603952026692560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c924eacff884626a5aa4c90cf311c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Class: {fileID: 11400000, guid: 1b7dd33594d96ea4691c45a7f68282f5, type: 2}
+  m_OverrideAttributes:
+    m_Keys:
+    - m_String: hp
+    - m_String: mp
+    - m_String: stamina
+    m_Values:
+    - m_IsExpanded: 0
+      m_ChangeStartPercent:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeStartPercent:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeStartPercent:
+        m_IsEnabled: 0
+        m_Value: 1
+  m_OverrideStats:
+    m_Keys:
+    - m_String: xp
+    - m_String: level
+    - m_String: constitution
+    - m_String: will
+    - m_String: strength
+    - m_String: dexterity
+    - m_String: wisdom
+    - m_String: charisma
+    - m_String: luck
+    m_Values:
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 1
+      m_ChangeBase:
+        m_IsEnabled: 1
+        m_Value: 4
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 1
+      m_ChangeBase:
+        m_IsEnabled: 1
+        m_Value: 65
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
+--- !u!114 &5769347243508563116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6023603952026692560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 7672886220414517521
+    - rid: 7672886189779321276
+  m_TriggerEvent:
+    rid: 7672886217717318530
+  references:
+    version: 2
+    RefIds:
+    - rid: 7672886189779321276
+      type: {class: InstructionStatsAddModifier, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Target:
+          m_Property:
+            rid: 7672886189779321277
+        m_Stat:
+          m_Property:
+            rid: 7672886189779321278
+        m_Type: 0
+        m_Value:
+          m_Property:
+            rid: 7672886189779321279
+    - rid: 7672886189779321277
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 7672886189779321278
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: d5e996d29fd8b4949be83fecaab6065b, type: 2}
+    - rid: 7672886189779321279
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 65
+    - rid: 7672886217717318530
+      type: {class: EventStatsAttributeChange, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Target:
+          m_Property:
+            rid: 7672886220414517595
+        m_When: 2
+        m_Attribute:
+          m_Property:
+            rid: 7672886217717318532
+    - rid: 7672886217717318532
+      type: {class: GetAttributeInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Attribute: {fileID: 11400000, guid: 4cf7ae5caa4804d0ea2548dceac15ffb, type: 2}
+    - rid: 7672886220414517521
+      type: {class: InstructionLogicCheckConditions, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Conditions:
+          m_Conditions:
+          - rid: 7672886220414517603
+    - rid: 7672886220414517595
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 6023603952026692560}
+    - rid: 7672886220414517603
+      type: {class: ConditionCompareAttribute, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Sign: 1
+        m_Traits:
+          m_Property:
+            rid: 7672886220414517607
+        m_Attribute:
+          m_Property:
+            rid: 7672886220414517605
+        m_Value: 0
+        m_CompareTo:
+          m_Comparison: 4
+          m_CompareTo:
+            m_Property:
+              rid: 7672886220414517606
+    - rid: 7672886220414517605
+      type: {class: GetAttributeInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Attribute: {fileID: 11400000, guid: 4cf7ae5caa4804d0ea2548dceac15ffb, type: 2}
+    - rid: 7672886220414517606
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
+    - rid: 7672886220414517607
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
+--- !u!114 &676647885041656461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6023603952026692560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecd922218e245e2b85d51f9f08338c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Instructions:
+    m_Instructions:
+    - rid: 7672886227062227064
+  m_TriggerEvent:
+    rid: 7672886220414517661
+  references:
+    version: 2
+    RefIds:
+    - rid: 7672886220414517661
+      type: {class: EventStatsStatChange, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Target:
+          m_Property:
+            rid: 7672886220414517662
+        m_When: 0
+        m_Stat:
+          m_Property:
+            rid: 7672886220414517663
+    - rid: 7672886220414517662
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 7672886220414517663
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: cbf0cb2229fd646dd8f831c2fc670538, type: 2}
+    - rid: 7672886227062227064
+      type: {class: InstructionStatsAddModifier, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Target:
+          m_Property:
+            rid: 7672886227062227068
+        m_Stat:
+          m_Property:
+            rid: 7672886227062227066
+        m_Type: 0
+        m_Value:
+          m_Property:
+            rid: 7672886227062227067
+    - rid: 7672886227062227066
+      type: {class: GetStatInstance, ns: GameCreator.Runtime.Stats, asm: GameCreator.Runtime.Stats}
+      data:
+        m_Stat: {fileID: 11400000, guid: d5e996d29fd8b4949be83fecaab6065b, type: 2}
+    - rid: 7672886227062227067
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 75
+    - rid: 7672886227062227068
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 
 --- !u!1 &6067658778708699661
 GameObject:
   m_ObjectHideFlags: 0

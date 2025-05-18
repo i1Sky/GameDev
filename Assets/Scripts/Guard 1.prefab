@@ -168,6 +168,8 @@ MonoBehaviour:
     tagAfter: Enemy
   - tagBefore: TargetPriority
     tagAfter: EnemyPriority
+  - tagBefore: Follow
+    tagAfter: Player
   Weapons: []
   _currentWeapons: []
   AbilityGroups: []
