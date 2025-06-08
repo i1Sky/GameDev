@@ -14422,7 +14422,7 @@ MonoBehaviour:
   - tagBefore: 'Friendly '
     tagAfter: Enemy
   toolbarStateManagerSelection: 0
-  toolbarStateManagerGeneralSettingsSelection: 2
+  toolbarStateManagerGeneralSettingsSelection: 1
   toolbarStateManagerEffectWatcherSettingsSelection: 0
   showHelpInformation: 1
   updateEditorAtRunTime: 0
@@ -14609,7 +14609,7 @@ MonoBehaviour:
   healthABC: 350
   healthIntergrationType: 3
   gcHealthID: hp
-  healthRegenPerSecond: 0
+  healthRegenPerSecond: 0.3
   fullHealthOnEnable: 1
   swapModelOnZeroHealth: 0
   swapModelToDisable:
@@ -14758,6 +14758,18 @@ MonoBehaviour:
     - m_String: charisma
     - m_String: luck
     m_Values:
+    - m_IsExpanded: 1
+      m_ChangeBase:
+        m_IsEnabled: 1
+        m_Value: 750
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 6
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
+        m_Value: 1
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0
@@ -14765,19 +14777,7 @@ MonoBehaviour:
     - m_IsExpanded: 1
       m_ChangeBase:
         m_IsEnabled: 1
-        m_Value: 4
-    - m_IsExpanded: 0
-      m_ChangeBase:
-        m_IsEnabled: 0
-        m_Value: 1
-    - m_IsExpanded: 0
-      m_ChangeBase:
-        m_IsEnabled: 0
-        m_Value: 1
-    - m_IsExpanded: 1
-      m_ChangeBase:
-        m_IsEnabled: 1
-        m_Value: 65
+        m_Value: 30
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0

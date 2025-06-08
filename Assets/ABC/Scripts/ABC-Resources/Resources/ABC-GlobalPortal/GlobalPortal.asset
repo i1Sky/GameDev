@@ -34,7 +34,7 @@ MonoBehaviour:
   convertAbilitiesToGameType: 1
   alwaysShowUI: 1
   clickType: 1
-  setupForWeaponsAndAbilities: 1
+  setupForWeaponsAndAbilities: 0
   addUI: 0
   enableAI: 1
   typeAI: 0

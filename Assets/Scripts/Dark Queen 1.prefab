@@ -11043,11 +11043,11 @@ MonoBehaviour:
     m_Values:
     - m_IsExpanded: 0
       m_ChangeBase:
-        m_IsEnabled: 0
-        m_Value: 1
-    - m_IsExpanded: 1
-      m_ChangeBase:
         m_IsEnabled: 1
+        m_Value: 2500
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
         m_Value: 10
     - m_IsExpanded: 0
       m_ChangeBase:
@@ -11068,7 +11068,7 @@ MonoBehaviour:
     - m_IsExpanded: 1
       m_ChangeBase:
         m_IsEnabled: 1
-        m_Value: 200
+        m_Value: 70
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0

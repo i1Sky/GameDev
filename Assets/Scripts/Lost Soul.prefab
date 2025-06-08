@@ -17813,13 +17813,13 @@ MonoBehaviour:
     - m_String: charisma
     - m_String: luck
     m_Values:
+    - m_IsExpanded: 1
+      m_ChangeBase:
+        m_IsEnabled: 1
+        m_Value: 750
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0
-        m_Value: 1
-    - m_IsExpanded: 0
-      m_ChangeBase:
-        m_IsEnabled: 1
         m_Value: 7
     - m_IsExpanded: 0
       m_ChangeBase:
@@ -17839,8 +17839,8 @@ MonoBehaviour:
         m_Value: 1
     - m_IsExpanded: 0
       m_ChangeBase:
-        m_IsEnabled: 0
-        m_Value: 60
+        m_IsEnabled: 1
+        m_Value: 30
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0

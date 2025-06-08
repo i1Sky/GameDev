@@ -13746,7 +13746,7 @@ MonoBehaviour:
     AIActive: 1
   ManaGUIList: []
   IconUIs: []
-  toolbarControllerManagerSelection: 1
+  toolbarControllerManagerSelection: 3
   toolbarControllerManagerGeneralSettingsSelection: 2
   toolbarControllerManagerTargetSettingsSelection: 0
   toolbarControllerManagerAISettingsSelection: 2
@@ -14683,13 +14683,13 @@ MonoBehaviour:
     - m_String: charisma
     - m_String: luck
     m_Values:
-    - m_IsExpanded: 0
-      m_ChangeBase:
-        m_IsEnabled: 0
-        m_Value: 1
     - m_IsExpanded: 1
       m_ChangeBase:
         m_IsEnabled: 1
+        m_Value: 2750
+    - m_IsExpanded: 0
+      m_ChangeBase:
+        m_IsEnabled: 0
         m_Value: 10
     - m_IsExpanded: 0
       m_ChangeBase:
@@ -14699,10 +14699,10 @@ MonoBehaviour:
       m_ChangeBase:
         m_IsEnabled: 0
         m_Value: 1
-    - m_IsExpanded: 0
+    - m_IsExpanded: 1
       m_ChangeBase:
         m_IsEnabled: 1
-        m_Value: 250
+        m_Value: 80
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0

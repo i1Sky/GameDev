@@ -11715,10 +11715,10 @@ MonoBehaviour:
     - m_String: charisma
     - m_String: luck
     m_Values:
-    - m_IsExpanded: 0
+    - m_IsExpanded: 1
       m_ChangeBase:
-        m_IsEnabled: 0
-        m_Value: 1
+        m_IsEnabled: 1
+        m_Value: 1400
     - m_IsExpanded: 0
       m_ChangeBase:
         m_IsEnabled: 0
